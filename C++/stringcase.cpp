@@ -82,3 +82,11 @@ void flip_char(char arr[], int size){
     }
 }
 
+int word_count(char arr[], int size){
+    int count = 1;
+    for(int i=0;i<size;i++){
+        if(arr[i] == ' ')
+            count++;
+    }
+    return count;
+}

@@ -117,4 +117,4 @@ void mergeSort(int arr[], int l, int r)
         // printf("merge 2 halves of [%d,%d] and [%d,%d]\n", l, m, m+1, r);
 		merge(arr, l, m, r); 
 	} 
-} 
+}

@@ -19,6 +19,7 @@ int main(){
     void (*cew_ptr)(char*, int) = &cap_each_word;
     void (*dew_ptr)(char*, int) = &decap_each_word;
     void (*fc_ptr)(char*, int) = &flip_char;
+    int (*wc_ptr)(char*, int) = &word_count;
 
     std::cout<<"Original string: "<< array << std::endl;
     (c_ptr)(array, size);
@@ -31,6 +32,7 @@ int main(){
     std::cout<<"String with each word decapitalized: "<< array << std::endl;
     (fc_ptr)(array, size);
     std::cout<<"String with each word's case flipped: "<< array << std::endl;
+    std::cout<<"Number of word of the given string: "<< (wc_ptr)(array, size) << std::endl;
 
     int arr[] = {63, 85, 76, 19, 11, 28, 77, 10};
     int num = 9;
@@ -45,6 +47,8 @@ int main(){
     (rv_ptr)(arr,sizeof(arr)/sizeof(arr[0]));
     print_array(arr,sizeof(arr)/sizeof(arr[0]));
     (ms_ptr)(arr,0,(sizeof(arr)/sizeof(arr[0]))-1);
+    print_array(arr,sizeof(arr)/sizeof(arr[0]));
+    (rv_ptr)(arr,sizeof(arr)/sizeof(arr[0]));
     print_array(arr,sizeof(arr)/sizeof(arr[0]));
     return 0;
 }

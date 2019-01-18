@@ -6,5 +6,6 @@ void decapitalize(char arr[], int size);
 void cap_each_word(char arr[], int size);
 void decap_each_word(char arr[], int size);
 void flip_char(char arr[], int size);
+int word_count(char arr[], int size);
 
 #endif
