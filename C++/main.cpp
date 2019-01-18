@@ -33,7 +33,7 @@ int main(){
     std::cout<<"String with each word's case flipped: "<< array << std::endl;
 
     int arr[] = {63, 85, 76, 19, 11, 28, 77, 10};
-    int num = 6;
+    int num = 9;
     int (*sum_ptr)(int*, int) = &sum;
     int (*fac_ptr)(int) = &factorial;
     void (*rv_ptr)(int*, int) = &reverse;
